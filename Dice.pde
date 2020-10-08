@@ -26,16 +26,18 @@
     fill(255);
     textSize(40);
     text("Total: " +totalRoll,250,520);
- //click counter   
-    fill(255);
-    textSize(20);
-    text("Clicks: " + clicks,250,560);
+ 
    
   }
   void mousePressed()
   {
       redraw();
-      clicks ++;
+      int clicks = 0;
+      clicks ++;   
+    fill(255);
+    textSize(20);
+    text("Clicks: " + clicks,250,560);
+    
   }
   
   class Die //models one single dice cube

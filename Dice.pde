@@ -5,7 +5,7 @@
      textAlign(CENTER,CENTER);
       noLoop();
   }
-  int clicks = 0;
+  int clicks = 1;
   void draw()
   {
       background(0);

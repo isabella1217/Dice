@@ -1,15 +1,17 @@
 
+ 
  void setup()
   {
     size(500,600);
      textAlign(CENTER,CENTER);
       noLoop();
   }
-  int clicks = 1;
+   int clicks = 0;
   void draw()
   {
       background(0);
-      int totalRoll=0;
+      int totalRoll=0; 
+  
       for (int x = 10; x<450; x=x+60)
       {
         for (int y = 10; y<450; y = y+60)
@@ -26,18 +28,18 @@
     fill(255);
     textSize(40);
     text("Total: " +totalRoll,250,520);
+   
+    fill(255);
+    textSize(20);
+    text("Clicks: " + clicks,250,560);} 
+     
  
    
-  }
+
   void mousePressed()
   {
       redraw();
-      int clicks = 0;
-      clicks ++;   
-    fill(255);
-    textSize(20);
-    text("Clicks: " + clicks,250,560);
-    
+      clicks++;
   }
   
   class Die //models one single dice cube
